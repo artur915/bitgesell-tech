@@ -8,7 +8,7 @@ function App() {
   return (
     <DataProvider>
       <nav style={{padding: 16, borderBottom: '1px solid #ddd'}}>
-        <Link to="/">Items</Link>
+        TEST
       </nav>
       <Routes>
         <Route path="/" element={<Items />} />
