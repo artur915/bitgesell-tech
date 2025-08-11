@@ -5,13 +5,12 @@ import VirtualizedItems from '../components/VirtualizedItems';
 
 function Items() {
   const { items, fetchItems, isLoading: contextLoading } = useData();
-  const [localLoading, setLocalLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [error, setError] = useState(null);
   const [useVirtualization, setUseVirtualization] = useState(false);
 
-  const isLoading = contextLoading || localLoading;
+  const isLoading = contextLoading;
 
   const pageSize = 10;
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useData } from '../state/DataContext';
 
 function ItemDetail() {
@@ -7,7 +7,6 @@ function ItemDetail() {
   const [item, setItem] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const navigate = useNavigate();
   const { fetchItemById } = useData();
 
   useEffect(() => {
